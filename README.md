@@ -66,4 +66,40 @@ flowchart TD
 
     Exit --> End
 ```
+```mermaid
+flowchart TD
+
+A([Start]) --> B[Print Banner & Load Data]
+
+B --> C{Login Menu}
+
+C -->|1. Student| D[Student Login]
+C -->|2. Admin| E[Admin Login]
+C -->|3. Exit| F[Save Data & Exit]
+
+D --> G{Student Menu}
+
+G -->|1 View Catalog| G
+G -->|2 Register Course| G
+G -->|3 Drop Course| G
+G -->|4 View Schedule| G
+G -->|5 Billing Summary| G
+G -->|6 Edit Profile| G
+G -->|7 Logout| C
+
+E --> H{Admin Menu}
+
+H -->|1 View Catalog| H
+H -->|2 View Roster| H
+H -->|3 View Students| H
+H -->|4 Add Student| H
+H -->|5 Edit Student| H
+H -->|6 Add Course| H
+H -->|7 Edit Course| H
+H -->|8 View Schedule| H
+H -->|9 Billing Summary| H
+H -->|10 Logout| C
+
+F --> I([End])
+```
 ### Prompts
