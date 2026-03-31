@@ -27,5 +27,43 @@ graph TD
 ```
 
 ### Flowchart of the main workflow
+```mermaid
+flowchart TD
+    Start --> LoginMenu
 
+    LoginMenu -->|1| StudentLogin
+    LoginMenu -->|2| AdminLogin
+    LoginMenu -->|3| Exit
+
+    %% Student Flow
+    StudentLogin --> StudentMenu
+
+    StudentMenu -->|1| ViewCatalog
+    StudentMenu -->|2| RegisterCourse
+    StudentMenu -->|3| DropCourse
+    StudentMenu -->|4| ViewSchedule
+    StudentMenu -->|5| Billing
+    StudentMenu -->|6| EditProfile
+    StudentMenu -->|7| Logout
+
+    Logout --> LoginMenu
+
+    %% Admin Flow
+    AdminLogin --> AdminMenu
+
+    AdminMenu -->|1| ViewCatalog
+    AdminMenu -->|2| ViewRoster
+    AdminMenu -->|3| ViewStudents
+    AdminMenu -->|4| AddStudent
+    AdminMenu -->|5| EditStudent
+    AdminMenu -->|6| AddCourse
+    AdminMenu -->|7| EditCourse
+    AdminMenu -->|8| ViewScheduleAdmin
+    AdminMenu -->|9| BillingAdmin
+    AdminMenu -->|10| LogoutAdmin
+
+    LogoutAdmin --> LoginMenu
+
+    Exit --> End
+```
 ### Prompts
