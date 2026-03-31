@@ -3,28 +3,8 @@ This is an unknown application written in Java
 
 ---- For Submission (you must fill in the information below) ----
 ### Use Case Diagram
-```mermaid
-graph TD
-    User((User))
+<img width="768" height="1001" alt="image" src="https://github.com/user-attachments/assets/29112e86-ea2a-4ab9-8fdb-37d13f7ebc60" />
 
-    User --> StudentLogin[Login as Student]
-    User --> AdminLogin[Login as Admin]
-
-    %% Student use cases
-    StudentLogin --> ViewCatalog[View Course Catalog]
-    StudentLogin --> RegisterCourse[Register for Course]
-    StudentLogin --> DropCourse[Drop Course]
-    StudentLogin --> ViewSchedule[View Schedule]
-    StudentLogin --> Billing[View Billing Summary]
-    StudentLogin --> EditProfile[Edit Profile]
-
-    %% Admin use cases
-    AdminLogin --> ManageCourses[Add/Edit Course]
-    AdminLogin --> ManageStudents[Add/Edit Student]
-    AdminLogin --> ViewRoster[View Class Roster]
-    AdminLogin --> ViewAllStudents[View All Students]
-    AdminLogin --> AdminBilling[View Student Billing]
-```
 
 ### Flowchart of the main workflow
 ```mermaid
@@ -68,3 +48,14 @@ flowchart TD
 ```
 
 ### Prompts
+Convert a Java course registration function into Python, including enroll and drop course logic.
+
+Write a simple Python CLI program that allows a student to:
+- view courses
+- register for a course
+- drop a course
+
+Ensure the program includes:
+- capacity checking
+- prevention of duplicate enrollment
+- simple menu interaction
