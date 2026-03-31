@@ -24,6 +24,7 @@ graph TD
     AdminLogin --> ViewRoster[View Class Roster]
     AdminLogin --> ViewAllStudents[View All Students]
     AdminLogin --> AdminBilling[View Student Billing]
+```
 
 ### Flowchart of the main workflow
 
